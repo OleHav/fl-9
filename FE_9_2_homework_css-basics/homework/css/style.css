@@ -1,0 +1,139 @@
+@media print {
+    .tm-sidebar, #about, .heading.tm-content-box, .blocks, #ideas, #ideas + .tm-content-box {
+        display: none;
+    }
+    .tm-main-content {
+        display: block;
+        margin: 0 auto;
+    }
+    .tm-banner-inner {
+        padding: 10% 0;
+    }
+    .tm-banner {
+        height: auto;
+    }
+    .pad {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    h2.tm-section-title {
+        color: blue;
+    }
+    .flex-2-col {
+        display: block;
+    }
+    .flex-2-col .tm-team-description-container {
+        max-width: 100%;
+    }
+    .flex-2-col .flex-item:nth-child(2) {
+        width:260px;
+        margin: 0 auto;
+    }
+}
+
+.thumbnail {
+    border-radius: 50%;
+}
+.box-bg h2:hover {
+    background-color: #31b0d5;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+p::first-letter {
+    color: #76cdd7;
+    font-size: 30px;
+}
+
+.tm-sidebar, .tm-content-box {
+    box-shadow: 2px 2px 1px 2px rgba(0,0,0,0.5);
+}
+
+#home, section {
+    position: relative;
+}
+#home::before, section::before {
+    content: "";
+    display: block;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 120px 0 0;
+    border-color: #31afd5 transparent transparent transparent;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#tmCarousel h2.tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+h2+p {
+    font-style: italic;
+}
+
+p:not(.tm-banner-text) {
+    line-height: 2.0em;
+    text-indent: 1.7em;
+}
+
+.heading h2 {
+    color: #76cdd7;
+    text-align: center;
+}
+.heading a {
+    color: #000;
+}
+.heading a:visited {
+    color: #ccc;
+}
+.heading a:hover {
+    border-bottom: 1px solid #76cdd7;
+    text-decoration: underline;
+    color: #76cdd7;
+}
+.heading .text::after {
+    content: "New";
+    font-size: 0.7em;
+    color: red;
+    vertical-align: super;
+}
+
+.blocks li:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.box p {
+    text-indent: 0;
+    font-size: 1.1em;
+}
+.box p::first-letter {
+    color: black;
+}
+
+.tm-nav-item:not(:last-child) {
+    border-bottom: 2px dotted #ccc;
+}
+
+#contact form input {
+    color: red;
+}
+.mandatory-field::after {
+    content: "*";
+    font-size: 1em;
+    color: red;
+    vertical-align: super;
+}
+button[type="submit"] {
+    color: red;
+    font-size: 1.1em;
+}
+button[type="submit"]:hover {
+    border-color: #31b0d5;
+    background: #31b0d5;
+    color: #fff;
+}
