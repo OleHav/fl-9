@@ -2,6 +2,12 @@
     .tm-sidebar, #about, .heading.tm-content-box, .blocks, #ideas, #ideas + .tm-content-box {
         display: none;
     }
+    #home.tm-content-box.margin-b-10::before {
+        display: none;
+    }
+    .tm-main-content>section::before {
+        display: none;
+    }
     .tm-main-content {
         display: block;
         margin: 0 auto;
@@ -26,9 +32,10 @@
         max-width: 100%;
     }
     .flex-2-col .flex-item:nth-child(2) {
-        width:260px;
+        width:250px;
         margin: 0 auto;
     }
+    
 }
 
 .thumbnail {
