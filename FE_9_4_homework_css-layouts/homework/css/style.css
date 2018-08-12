@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+#intro {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/apples.jpg");
+    background-size: cover;
+
+    /*font-family: 'Open Sans', sans-serif;*/
+
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+}
+
+header {
+    margin: 1px 1px 65px 1px;
+}
+header div.top_nav {
+    display: block;
+    height: 30px;
+}
+header div.logo {
+    display: flex;
+    float: left;  
+    text-transform: uppercase; 
+    color: #FFF;
+    letter-spacing: 3px;
+    font-size: 0.7em;
+}
+header div.top_nav nav ul {
+    display: flex;
+    float: right;   
+    list-style-type: none;
+} 
+header div.top_nav nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 0 20px;
+} 
+header div.top_nav nav ul li a:hover {
+    text-decoration: underline;
+    color: #FFF;
+} 
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    letter-spacing: 5px;
+    font-size: 2em;
+    margin-top: 165px;
+}
+header h1 span {
+    font-size: 1.8em;
+}
+header h2 {
+    text-align: center;
+    color: #FFF;
+    font-size: 0.6em;
+    margin-bottom: 175px;
+}
+header button {
+    display: block;
+    margin: 45px auto;
+    border: 1px solid #FFF;
+    outline: none;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7em;
+    padding: 10px 45px;
+    background-color: rgba(53, 56, 52, 0.1);
+}
+header button:hover {
+    background-color:  rgba(232, 232, 232, 0.1);
+    color: #FFF;
+}
+div.asides {
+    display: block;
+}
+.asides_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% auto 40%;
+    padding: 95px 3% 95px 3%;
+}
+div aside.aside_left {
+    font-size: 1.4em;
+}
+
+#our_articles {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+#our_articles h3 {
+    padding: 75px 2px 45px 2px;
+    font-weight: normal;
+    margin: 0 auto;
+}
+#our_articles div {
+    background-color: transparent;
+}
+#our_articles div.article_1,
+#our_articles div.article_2,
+#our_articles div.article_3,
+#our_articles div.article_4 {
+    display: flex;
+    align-items: center;
+    margin: 7px 50px;
+}
+
+#our_articles div.article_4 {
+    margin-bottom: 47px;
+}
+
+#our_articles div:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+#our_articles div.article_1 img,
+#our_articles div.article_2 img,
+#our_articles div.article_3 img,
+#our_articles div.article_4 img {
+    max-width: 66.66%;
+    height: auto;
+}
+
+#our_articles div.subscription {
+    margin: 0 50px;
+    padding: 50px 20px;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    
+    width: 100%;
+        
+}
+
+#our_articles div p.subscription_name {
+    margin-right: 20px;
+}
+
+.subscription_form,
+.subscription_form_footer {
+    display: flex;
+    font-size: 1em;
+}
+
+.subscription_email {
+    padding: 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #343638;
+    border-right: none;
+    outline: none;
+}
+
+.subscription_email_footer {
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #343638;
+    border-right: none;
+    outline: none;
+}
+
+.subscribe_btn {
+    padding: 20px;
+    color: #fff;
+    background-color: #343638;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.subscribe_btn_footer {
+    padding: 8px;
+    color: #fff;
+    background-color: #343638;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.subscribe_btn:hover,
+.subscribe_btn_footer:hover {
+    border: 1px solid #000;
+    background-color: #000;
+}
+
+#footer_summary {
+    display: block;
+}
+
+.block_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 22% 22% 22% 22%;
+    padding: 95px 3% 95px 3%;
+}
+
+.footer_tilte {
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+.footer_discription {
+    margin-bottom: 5px;
+    color:#A4A4A4;
+    font-size: 1em;
+    
+}
+.time {
+    color: #F3F3F3;
+    font-size: 1em;
+    
+}
+
+footer p {
+    color: #9E9E9E;
+    padding-left: 50px;
+    display: flex;
+    float: left;
+    padding-bottom: 26px;
+    padding-top: 26px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    width: 300px;
+    padding-bottom: 26px;
+    padding-top: 26px;
+    padding-right: 50px;
+}
+
+.footer_nav_item {
+    color: #343638;
+    text-decoration: none;
+}
+
+.footer_nav_item:hover {
+    color: #9E9E9E;
+}
+
+.article_1,
+.article_2, 
+.article_3,
+.article_4 {
+    position: relative;
+    text-align: center;
+}
+
+.bottom_left1,
+.bottom_left3 {
+    position: absolute;
+    bottom: 12px;
+    left: 26px;
+    font-size: 1em;
+    font-weight: normal;
+    color: #F3F3F3;
+}
+
+.bottom_right2,
+.bottom_right4 {
+    position: absolute;
+    bottom: 12px;
+    right: 26px;
+    font-size: 1em;
+    font-weight: normal;
+    color: #F3F3F3;
+}
+
+.btn_like_top_left1,
+.btn_like_top_left3 {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #FFF;
+    outline: none;
+    padding: 7px 15px;
+    display: inline-block;
+
+}
+
+.btn_like_top_left1:hover,
+.btn_like_top_left3:hover {
+    background-color: #E9E9E9;
+    color: #000;
+    border: 2px solid #A4A4A4;
+    opacity: 0.7;
+}
+
+.btn_like_top_right2,
+.btn_like_top_right4 {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #FFF;
+    outline: none;
+    padding: 7px 15px;
+    display: inline-block;
+}
+
+.btn_like_top_right2:hover,
+.btn_like_top_right4:hover {
+    background-color: #E9E9E9;
+    color: #000;
+    border: 2px solid #A4A4A4;
+    opacity: 0.7;
+}
+
+.btn_like_top_left1::after,
+.btn_like_top_left3::after,
+.btn_like_top_right2::after,
+.btn_like_top_right4::after {
+    content: "♥";
+    padding-left: 9px;
+}
