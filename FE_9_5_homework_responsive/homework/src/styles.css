@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #0a1223;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.all_content {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 110px;
+}
+
+.nav_link {
+  color: #5d5d5d;
+  text-decoration: none;
+}
+
+.nav_link:hover {
+  color:  #54597d;
+}
+
+.active, .nav_link:active {
+  color:  #54597d;
+}
+
+.title {
+  color: #ddd;
+  text-align: center;
+  font-size: 5vw;
+  margin: 100px 0;
+}
+
+.article_title {  
+  background: linear-gradient(to right, #ddd, #5d5d5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  font-size: 2.5vw;
+  margin-bottom: 30px;
+}
+
+.article_description {
+  text-indent: 4%;
+  text-align: justify;
+  color: #5d5d5d;
+}
+
+.img {
+  max-width: 50%;
+  width: auto;
+  height: auto;
+}
+
+.nav_list {
+  list-style-type: none;
+  padding: 20px;  
+  display: flex;  
+  justify-content: flex-end;
+}
+
+.nav_item {
+  padding-left: 40px;
+}
+
+.fact_about {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.fact_about:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.fact_text {
+  width: 47%;  
+}
+
+.scroll_up {
+  display: none;
+  outline: none;
+}
+
+@media (max-width: 991px) {
+  .nav_list {
+    justify-content: center;
+  }
+
+  .fact_about, .fact_about:nth-child(odd) {
+    flex-direction: column-reverse;    
+  }
+
+  .img, .fact_text {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .img {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    background-color: #fff;
+  }
+
+  .wrapper {
+    width: 98%;
+  }
+
+  .all_content {
+    width: 90%;
+  }
+
+  .active, .nav_link:active {
+    font-weight: bold;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .nav_item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }  
+
+  .title {
+    font-size: 2em;
+    color: #000;
+  }
+
+  .article_title {
+    font-size: 1.8em;
+    background: unset;   
+    -webkit-text-fill-color: unset;
+    -webkit-background-clip: unset;
+    color: #484747;  
+  }
+
+  .article_description {
+    font-size: 1.5em;
+    color: #5d5d5d;
+  }  
+
+  .scroll_up {
+    display: block;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    background-color: #5ebcff;
+    color: #fff;
+    box-shadow: 10px 10px 20px #ddd;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    text-decoration: none;  
+    outline: none;      
+  }  
+
+  .scroll_up:visited {
+    color: #fff;
+  }
+}
